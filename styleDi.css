@@ -1,0 +1,164 @@
+
+body{
+background: rgb(1,174,122);
+background: linear-gradient(180deg, rgba(1,174,122,1) 0%, rgba(255,255,255,1) 100%);
+}
+.login{
+
+height: 200px;
+  width: 200px;
+}
+  
+div{ 
+  width: 268px; 
+  height: 110px;
+  border: 0px solid #000000;
+  background-color: #2AC267;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.botao {
+  align-items: center;
+  width: 268px; 
+  height: 110px;
+  border: 0px solid #000000;
+  background-color: #2AC267;
+  display: inline-flex;
+  justify-content: center;
+}
+.icone2 {
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  top: 20px; 
+  right: 45%;
+  left: 45%;
+}
+.medic{
+  width: 268px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 35%;
+  top: 25%; 
+  font-size: 50px;
+  border: 2px solid #0E8F42 ;
+  color:white ;
+}
+.pacient{
+  width: 268px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  font-size: 50px;
+  border: 2px solid #0E8F42 ;
+  color:white ;
+}
+.cpf-email2{
+  width: 555px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 35%;
+  top: 45%;
+  font-size: 50px;
+border: 2px solid #0E8F42 ;
+  color:white ;
+}
+.cpf{
+  width: 500px;
+  height: 70px;
+  font-size: 35px;
+  background-color:#2AC267 ;
+  color: white;
+  padding-left: 30px;
+  border: 0px solid white;
+  text-align: left;
+  padding-right: 30px;
+  cursor: text;
+  border-bottom: 2px solid white
+}
+.cpf3{
+position: absolute;
+  left: -5%;
+  top: -50px;
+  color: white;
+  cursor: text;
+  padding-left: 50px;
+  font-size: 40px;
+}
+.senha{
+  width: 555px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 35%;
+  top: 62%;
+  font-size: 50px;
+border: 2px solid #0E8F42 ;
+  color:white ;
+  }
+.senha2{
+  width: 500px;
+  height: 70px;
+  font-size: 35px;
+  background-color:#2AC267 ;
+  color: white;
+  padding-left: 30px;
+  border: 0px solid white;
+  text-align: left;
+  padding-right: 30px;
+  cursor: text;
+  border-bottom: 2px solid white
+}
+.senha3{
+position: absolute;
+  left: -5%;
+  top: -50px;
+  color: white;
+  cursor: text;
+  padding-left: 50px;
+  font-size: 40px;
+}
+.entrar{
+  width: 268px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 50%;
+  top: 75%; 
+  font-size: 50px;
+  color:white ;
+  border: 2px solid #0E8F42
+}
+.criar_conta{
+  width: 268px;
+  height: 110px;
+  background-color: #2AC267;
+  position: absolute;
+  left: 35%;
+  top: 75%; 
+  font-size: 45px;
+  color:white ;
+  border: 2px solid #0E8F42 ;
+
+}
+.criar_conta:hover{
+  font-weight: bold;
+  background-color: #0D863D;
+}
+.entrar:hover{
+  font-weight: bold;
+  background-color: #0D863D;
+}
+.pacient:hover{
+  font-weight: bold;
+  background-color: #0D863D;
+}
+.medic:hover{
+  font-weight: bold;
+  background-color: #0D863D;
+}
