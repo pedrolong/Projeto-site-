@@ -1,0 +1,159 @@
+
+.retangulo-topo{
+height:120px ;
+  width: 100%;
+  background-color: #01AE7A;
+  display: flexbox;
+text-align: center;
+justify-content: center;
+  align-items: center;
+font-size: 50px;
+color: black;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  font-weight: bold;
+}
+.logo-clinica{
+  height: 100px;
+ margin-top: 10px;
+  border-radius: 10%;
+}
+.helth-care{
+  position: absolute;
+  top: -20px;
+  font-size: 45px;
+  text-align: center;
+  justify-content: center;
+  left: 750px;
+  color: white;
+}
+.retangulo-base{
+  height:120px ;
+  width: 100%;
+  background-color: #01AE7A;
+  position: absolute;
+  display: flexbox;
+  top: 839px;
+}
+.crie-conta{
+  height: 60px;
+  width: 490px;
+  background-color: #01AE7A;
+  position: absolute;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  left: 35%;
+  top: 130%;
+}
+.nome{
+  position: absolute;
+  top: 230%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.nome2{
+  position: absolute;
+  top: 205%;
+  font-size: 30px;
+  left: 35%;
+}
+.email{
+  position: absolute;
+  top: 285%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.email2{
+  position: absolute;
+  top: 265%;
+  font-size: 25px;
+  left: 35%;
+}
+.cidade{
+  position: absolute;
+  top: 340%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.cidade2{
+  position: absolute;
+  top: 320%;
+  font-size: 25px;
+  left: 35%;
+}
+.cpf{
+  position: absolute;
+  top: 395%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.cpf2{
+  position: absolute;
+  top: 375%;
+  font-size: 25px;
+  left: 35%;
+}
+.senha{
+  position: absolute;
+  top: 450%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.senha2{
+  position: absolute;
+  top: 430%;
+  font-size: 25px;
+  left: 35%;
+}
+.confirme-senha{
+  position: absolute;
+  top: 505%;
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid black
+  cursor: text;
+  left: 35%
+  
+}
+.confirme-senha2{
+  position: absolute;
+  top: 485%;
+  font-size: 25px;
+  left: 35%;
+}
+.criar-conta{
+  width:250px ;
+  height:50px ;
+  background-color:#2AC267;
+  position: absolute;
+  top: 560%;
+  border: 2px solid #01AE7A;
+left: 35%;
+  font-size: 35px;
+}
+.criar-conta:hover{
+  font-weight: bold;
+  background-color: #0D863D;
+}
