@@ -1,159 +1,84 @@
 
-.retangulo-topo{
-height:120px ;
-  width: 100%;
-  background-color: #01AE7A;
-  display: flexbox;
-text-align: center;
-justify-content: center;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+
+
+.retangulo-topo {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-font-size: 50px;
-color: black;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  font-weight: bold;
-}
-.logo-clinica{
-  height: 100px;
- margin-top: 10px;
-  border-radius: 10%;
-}
-.helth-care{
-  position: absolute;
-  top: -20px;
-  font-size: 45px;
-  text-align: center;
-  justify-content: center;
-  left: 750px;
+  background-color:#01AE7A ;
+  padding: 20px;
   color: white;
 }
-.retangulo-base{
-  height:120px ;
-  width: 100%;
-  background-color: #01AE7A;
-  position: absolute;
-  display: flexbox;
-  top: 839px;
+
+.helth-care {
+  font-size: 32px;
+  margin: 0;
 }
-.crie-conta{
-  height: 60px;
-  width: 490px;
-  background-color: #01AE7A;
-  position: absolute;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  left: 35%;
-  top: 130%;
+
+.logo-clinica {
+  max-width: 100px;
+  height: auto;
 }
-.nome{
-  position: absolute;
-  top: 230%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
+
+
+
+.meio {
+  margin: 40px auto;
+  max-width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.nome2{
-  position: absolute;
-  top: 205%;
-  font-size: 30px;
-  left: 35%;
+
+.crie-conta {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
 }
-.email{
-  position: absolute;
-  top: 285%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
-}
-.email2{
-  position: absolute;
-  top: 265%;
-  font-size: 25px;
-  left: 35%;
-}
-.cidade{
-  position: absolute;
-  top: 340%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
-}
-.cidade2{
-  position: absolute;
-  top: 320%;
-  font-size: 25px;
-  left: 35%;
-}
-.cpf{
-  position: absolute;
-  top: 395%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
-}
-.cpf2{
-  position: absolute;
-  top: 375%;
-  font-size: 25px;
-  left: 35%;
-}
-.senha{
-  position: absolute;
-  top: 450%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
-}
-.senha2{
-  position: absolute;
-  top: 430%;
-  font-size: 25px;
-  left: 35%;
-}
-.confirme-senha{
-  position: absolute;
-  top: 505%;
-  height: 30px;
-  width: 300px;
-  border-bottom: 1px solid black
-  cursor: text;
-  left: 35%
-  
-}
-.confirme-senha2{
-  position: absolute;
-  top: 485%;
-  font-size: 25px;
-  left: 35%;
-}
-.criar-conta{
-  width:250px ;
-  height:50px ;
-  background-color:#2AC267;
-  position: absolute;
-  top: 560%;
-  border: 2px solid #01AE7A;
-left: 35%;
-  font-size: 35px;
-}
-.criar-conta:hover{
+
+label {
+  display: block;
+  margin-bottom: 8px;
   font-weight: bold;
-  background-color: #0D863D;
+  font-size: 16px;
+}
+
+
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="password"] + label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+footer {
+  background-color: #01AE7A;
+  height: 100px;
 }
