@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="styleDi.css">
-  </head>
-  <body>
-    <img class="icone2" src="assents/3607444_1.png" height="175" width="165">
 
-    <label>
-      <input type="radio" name="user-type" value="medicos" id="opcao-medico">
-      Médico
-    </label>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styleDi.css">
+</head>
 
-    <label>
-      <input type="radio" name="user-type" value="pacientes" id="opcao-paciente">
-      Paciente
-    </label>
+<body>
+  <img class="icone2" src="assents/3607444_1.png" height="175" width="165">
 
-    <form>
-      <div>
-        <button class="cpf-email2">
-          <input class="cpf" type="text" id="cpf-input" name="cpf" required placeholder="Digite aqui">
-          <label class="cpf3">Digite seu CPF</label>
-        </button>
-      </div>
+  <label>
+    <input type="radio" name="user-type" value="medicos" id="opcao-medico">
+    Médico
+  </label>
 
-      <div>
-        <button class="senha">
-          <input class="senha2" type="password" id="senha-input" name="senha" required placeholder="Digite aqui">
-          <label class="senha3">Digite sua Senha</label>
-        </button>
-      </div>
+  <label>
+    <input type="radio" name="user-type" value="pacientes" id="opcao-paciente">
+    Paciente
+  </label>
 
-      <div>
-        <button class="entrar" id="login-btn" type="button">Entrar</button>
-      </div>
+  <form>
+    <div>
+      <button class="cpf-email2">
+        <input class="cpf" type="text" id="cpf-input" name="cpf" required placeholder="Digite aqui">
+        <label class="cpf3">Digite seu CPF</label>
+      </button>
+    </div>
 
-      <div>
-        <button onclick="window.location.href='http://127.0.0.1:5501/Tela%20cadastro.html'" class="criar_conta">Criar Conta</button>
+    <div>
+      <button class="senha">
+        <input class="senha2" type="password" id="senha-input" name="senha" required placeholder="Digite aqui">
+        <label class="senha3">Digite sua Senha</label>
+      </button>
+    </div>
 
-      </div>
-    </form>
+    <div>
+      <button class="entrar" id="login-btn" type="button">Entrar</button>
+    </div>
 
-    <script>
-      var dados = {
-        "medicos": [
-          {
-            "cpf": "111.111.111-11",
-            "senha": "senha_medico"
-          },
-          {
-            "cpf": "222.222.222-22",
-            "senha": "outra_senha_medico"
-          }
-        ],
-        "pacientes": [
-          {
-            "cpf": "333.333.333-33",
-            "senha": "senha_paciente"
-          },
-          {
-            "cpf": "444.444.444-44",
-            "senha": "outra_senha_paciente"
-          }
-        ]
-      };
+    <div>
+      <button onclick="window.location.href='http://127.0.0.1:5501/Tela%20cadastro.html'" class="criar_conta">Criar
+        Conta</button>
 
-      var loginBtn = document.getElementById("login-btn");
-      loginBtn.addEventListener("click", function() {
-        var cpf = document.getElementById("cpf-input").value;
-        var senha = document.getElementById("senha-input").value;
-        var tipoUsuario = document.querySelector('input[name="user-type"]:checked').value;
+    </div>
+  </form>
 
-        var usuarioEncontrado = false;
-        for (var i = 0; i < dados[tipoUsuario].length; i++) {
-          var usuario = dados[tipoUsuario][i];
-          if (usuario.cpf === cpf && usuario.senha === senha) {
-            usuarioEncontrado = true;
-            break;
-          }
+  <script>
+    var dados = {
+      "medicos": [
+        {
+          "cpf": "477.543.498-50",
+          "senha": "senhamedico"
+        },
+        {
+          "cpf": "222.222.222-22",
+          "senha": "outra_senha_medico"
         }
-
-        if (usuarioEncontrado) {
-          alert("Login realizado com sucesso!");
-          // Redirecionar para a página do usuário logado
-        } else {
-          alert("Credenciais de login inválidas!");
+      ],
+      "pacientes": [
+        {
+          "cpf": "333.333.333-33",
+          "senha": "senha_paciente"
+        },
+        {
+          "cpf": "444.444.444-44",
+          "senha": "outra_senha_paciente"
         }
-      });
-    </script>
-  </body>
+      ]
+    };
+
+    function validarCPF(cpf) {
+      cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
+
+      if (cpf.length !== 11) {
+        return false;
+      }
+
+      // Calcula o primeiro dígito verificador
+      var soma = 0;
+      for (var i = 0; i < 9; i++) {
+        soma += parseInt(cpf.charAt(i)) * (10 - i);
+      }
+      var resto = 11 - (soma % 11);
+      var dv1 = resto < 2 ? 0 : resto;
+
+      // Calcula o segundo dígito verificador
+      soma = 0;
+      for (var i = 0; i < 10; i++) {
+        soma += parseInt(cpf.charAt(i)) * (11 - i);
+      }
+      resto = 11 - (soma % 11);
+      var dv2 = resto < 2 ? 0 : resto;
+
+      return cpf.charAt(9) == dv1 && cpf.charAt(10) == dv2;
+    }
+
+    var loginBtn = document.getElementById("login-btn");
+    loginBtn.addEventListener("click", function () {
+      var cpf = document.getElementById("cpf-input").value;
+      var senha = document.getElementById("senha-input").value;
+      var tipoUsuario = document.querySelector('input[name="user-type"]:checked').value;
+
+      if (!validarCPF(cpf)) {
+        alert("CPF inválido!");
+        return;
+      }
+
+      var usuarioEncontrado = false;
+      for (var i = 0; i < dados[tipoUsuario].length; i++) {
+        var usuario = dados[tipoUsuario][i];
+        if (usuario.cpf === cpf && usuario.senha === senha) {
+          usuarioEncontrado = true;
+          break;
+        }
+      }
+
+      if (usuarioEncontrado) {
+        alert("Login realizado com sucesso!");
+        if (tipoUsuario === "medicos") {
+          window.location.href='http://127.0.0.1:5501/Tela%20cadastro.html';
+        } else if (tipoUsuario === "pacientes") {
+          window.location.href = "paginaPaciente.html";
+        }
+      } else {
+        alert("Credenciais de login inválidas!");
+      }
+    });
+
+  </script>
+</body>
+
 </html>

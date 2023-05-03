@@ -26,6 +26,7 @@ body {
 .logo-clinica {
   max-width: 100px;
   height: auto;
+  border-radius: 10px ;
 }
 
 
@@ -57,13 +58,15 @@ label {
 
 input[type="text"] + label,
 input[type="email"] + label,
-input[type="password"] + label {
+input[type="password"] + label 
+input[type="cpf"] + label {
   display: block;
   margin-bottom: 8px;
 }
 
 input[type="text"],
 input[type="email"],
+input[type="cpf"],
 input[type="password"] {
   width: 100%;
   padding: 12px 20px;
@@ -75,7 +78,18 @@ input[type="password"] {
 }
 
 
-
+.criar-conta1 {
+  background-color:#01AE7A ;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  height:50px ;
+  width:150px ;
+  font-size: 20px;
+}
 
 
 footer {
