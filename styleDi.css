@@ -42,6 +42,7 @@ label, .cpf-email2, .senha, .entrar, .criar_conta {
   margin-right: 10px;
   padding: 5px;
   width: 200px;
+  border-radius: 5px;
 }
 
 /* Define o estilo do campo Senha */
@@ -51,6 +52,7 @@ label, .cpf-email2, .senha, .entrar, .criar_conta {
   margin-right: 10px;
   padding: 5px;
   width: 200px;
+  border-radius: 5px;
 }
 
 /* Estilo dos rótulos */
@@ -59,6 +61,7 @@ label, .cpf-email2, .senha, .entrar, .criar_conta {
   margin-bottom: 5px;
   font-size: 14px;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 /* Define o estilo dos botões de rádio */

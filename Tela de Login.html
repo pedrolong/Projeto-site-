@@ -70,42 +70,11 @@
       ]
     };
 
-    function validarCPF(cpf) {
-      cpf = cpf.replace(/[^\d]+/g, ''); // Remove caracteres não numéricos
-
-      if (cpf.length !== 11) {
-        return false;
-      }
-
-      // Calcula o primeiro dígito verificador
-      var soma = 0;
-      for (var i = 0; i < 9; i++) {
-        soma += parseInt(cpf.charAt(i)) * (10 - i);
-      }
-      var resto = 11 - (soma % 11);
-      var dv1 = resto < 2 ? 0 : resto;
-
-      // Calcula o segundo dígito verificador
-      soma = 0;
-      for (var i = 0; i < 10; i++) {
-        soma += parseInt(cpf.charAt(i)) * (11 - i);
-      }
-      resto = 11 - (soma % 11);
-      var dv2 = resto < 2 ? 0 : resto;
-
-      return cpf.charAt(9) == dv1 && cpf.charAt(10) == dv2;
-    }
-
     var loginBtn = document.getElementById("login-btn");
     loginBtn.addEventListener("click", function () {
       var cpf = document.getElementById("cpf-input").value;
       var senha = document.getElementById("senha-input").value;
       var tipoUsuario = document.querySelector('input[name="user-type"]:checked').value;
-
-      if (!validarCPF(cpf)) {
-        alert("CPF inválido!");
-        return;
-      }
 
       var usuarioEncontrado = false;
       for (var i = 0; i < dados[tipoUsuario].length; i++) {
@@ -119,9 +88,9 @@
       if (usuarioEncontrado) {
         alert("Login realizado com sucesso!");
         if (tipoUsuario === "medicos") {
-          window.location.href='http://127.0.0.1:5501/Tela%20cadastro.html';
+          window.location.href='http://127.0.0.1:5501/tela%20medico.html';
         } else if (tipoUsuario === "pacientes") {
-          window.location.href = "paginaPaciente.html";
+          window.location.href = "http://127.0.0.1:5501/TelaPaciente.html";
         }
       } else {
         alert("Credenciais de login inválidas!");
