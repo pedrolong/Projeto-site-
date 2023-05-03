@@ -9,6 +9,7 @@ body {
 .icone2 {
   display: block;
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 /* Posiciona os rótulos e os botões */
@@ -26,11 +27,12 @@ label, .cpf-email2, .senha, .entrar, .criar_conta {
   color: #fff;
   padding: 10px 20px;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 
 /* Quando o mouse estiver sobre os botões */
 .cpf-email2:hover, .senha:hover, .entrar:hover, .criar_conta:hover {
-  background-color: #01AE7A;
+  background-color: #028a61;
 }
 
 /* Define o estilo do campo CPF */
@@ -56,6 +58,7 @@ label, .cpf-email2, .senha, .entrar, .criar_conta {
   display: block;
   margin-bottom: 5px;
   font-size: 14px;
+  font-size: 20px;
 }
 
 /* Define o estilo dos botões de rádio */
@@ -66,4 +69,21 @@ input[type="radio"] {
 /* Define o estilo dos botões de rádio selecionados */
 input[type="radio"]:checked+label {
   font-weight: bold;
+}
+
+.entrar {
+  background-color:#01AE7A ;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  height:50px ;
+  width:150px ;
+  font-size: 25px;
+}
+
+.criar_conta {
+  margin-bottom: 254px;
 }
