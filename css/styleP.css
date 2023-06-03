@@ -1,6 +1,7 @@
-  * .e559_67 {
+ StyleP.css 
+ * .e559_67 {
      overflow: hidden;
-   width: 10000;
+     width: 10000px; 
  }
 
  * {
@@ -25,15 +26,11 @@
  }
 
  .e559_297 {
-     transform: rotate(89.99999999999999deg);
      width: 36px;
      height: 79px;
      position: absolute;
-     left: 338px;
-     top: 124px;
-     background-image: url(images/image_3.png);
-     background-repeat: no-repeat;
-     background-size: cover;
+     left: 380px;
+     top: 140px; 
  }
 
  .e557_86 {
@@ -47,7 +44,7 @@
  }
 
  .e559_167 {
-     width: 162px;
+     width: 260px; 
      height: 144px;
      position: absolute;
      left: 24px;
@@ -58,7 +55,6 @@
      border-bottom-right-radius: 9px;
      background-image: url("logo.png"); 
      background-repeat: no-repeat;
-     background-size: cover;
      margin-left: 50px; 
  }
 
@@ -194,17 +190,13 @@
  }
 
  .e559_182 {
-     transform: rotate(1.4760706593255593deg);
-     width: 76px;
-     height: 74px;
+     width: 100px; 
+     height: 100px;
      position: absolute;
      left: 1123.38330078125px;
-     top: 50px;
-     border: 100px;
-     background-image: url("icone\ login.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin-left: 350px;
+     top: 55px;
+     border: 150px;
+     margin-left: 355px;
  }
 
  .e559_183 {
@@ -467,4 +459,12 @@
  .logo { 
      height: 144fr;
      width: 162fr;
+ } 
+ .icone {
+    height: 66px;
+    width: 72px; 
+ } 
+ .seta {
+    height: 43px;
+    width: 1000px;
  } 
