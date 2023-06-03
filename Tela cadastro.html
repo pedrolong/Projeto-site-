@@ -63,6 +63,17 @@
         <input class="confirme-senha" type="password" name="confirme-senha" required
           placeholder="Digite novamente sua senha" id="confirme-senha">
       </label>
+      
+      <label class="opcoes-usuarios"> Selecione o tipo de usuário:</label>
+      <label class="opcao-usuario">
+        <input type="radio" name="tipo-usuario" value="medico" required>
+        Médico
+      </label>
+      
+      <label class="opcao-usuario">
+        <input type="radio" name="tipo-usuario" value="paciente" required>
+        Paciente
+      </label>
 
       <button type="submit"  value="Cadastrar" class="criar-conta1"> Criar Conta </button>
     </form>
@@ -90,68 +101,73 @@
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         formValido = false;
       } else {
-// Campo "Email" válido
-// Remove a mensagem de erro, se estiver visível
-const emailError = document.getElementById("email-error");
-if (emailError) {
-emailError.remove();
-}
-}
-  // Verifica o campo "Cidade"
-  const cidade = document.getElementById("cidade").value;
-  if (cidade.trim() === "") {
-    formValido = false;
-    alert("Por favor, selecione uma cidade.");
-  }
+        // Campo "Email" válido
+        // Remove a mensagem de erro, se estiver visível
+        const emailError = document.getElementById("email-error");
+        if (emailError) {
+          emailError.remove();
+        }
+      }
+      
+      // Verifica o campo "Cidade"
+      const cidade = document.getElementById("cidade").value;
+      if (cidade.trim() === "") {
+        formValido = false;
+        alert("Por favor, selecione uma cidade.");
+      }
 
-  // Verifica o campo "CPF"
-  const cpf = document.getElementById("cpf").value;
-  if (cpf.trim() === "") {
-    formValido = false;
-    alert("Por favor, preencha o campo CPF.");
-  } else if (!/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/.test(cpf)) {
-    formValido = false;
-    alert("Por favor, preencha o campo CPF com um formato válido (ex: 123.456.789-10).");
-  }
+      // Verifica o campo "CPF"
+      const cpf = document.getElementById("cpf").value;
+      if (cpf.trim() === "") {
+        formValido = false;
+        alert("Por favor, preencha o campo CPF.");
+      } else if (!/^\d{3}\.\d{3}\.\d{3}\-\d{2}$/.test(cpf)) {
+        formValido = false;
+        alert("Por favor, preencha o campo CPF com um formato válido (ex: 123.456.789-10).");
+      }
 
-  // Verifica o campo "Senha"
-  const senha = document.getElementById("senha").value;
-  if (senha.trim() === "") {
-    formValido = false;
-    alert("Por favor, preencha o campo Senha.");
-  } else if (senha.length < 8) {
-    formValido = false;
-    alert("A senha deve ter no mínimo 8 caracteres.");
-  }
+      // Verifica o campo "Senha"
+      const senha = document.getElementById("senha").value;
+      if (senha.trim() === "") {
+        formValido = false;
+        alert("Por favor, preencha o campo Senha.");
+      } else if (senha.length < 8) {
+        formValido = false;
+        alert("A senha deve ter no mínimo 8 caracteres.");
+      }
 
-  // Verifica o campo "Confirme sua senha"
-  const confirmaSenha = document.getElementById("confirme-senha").value;
-  if (confirmaSenha.trim() === "") {
-    formValido = false;
-    alert("Por favor, preencha o campo Confirme sua senha.");
-  } else if (confirmaSenha !== senha) {
-    formValido = false;
-    alert("As senhas não coincidem. Por favor, verifique.");
-  }
+      // Verifica o campo "Confirme sua senha"
+      const confirmaSenha = document.getElementById("confirme-senha").value;
+      if (confirmaSenha.trim() === "") {
+        formValido = false;
+        alert("Por favor, preencha o campo Confirme sua senha.");
+      } else if (confirmaSenha !== senha) {
+        formValido = false;
+        alert("As senhas não coincidem. Por favor, verifique.");
+      }
 
-  // Se o formulário for válido, envia o cadastro
-  if (formValido) {
-    alert("Cadastro enviado com sucesso!");
-    document.getElementById("cadastro-form").reset();
-    window.location.href='http://127.0.0.1:5501/Tela%20de%20Login.html';
+      // Se o formulário for válido, envia o cadastro
+      if (formValido) {
+        alert("Cadastro enviado com sucesso!");
+        document.getElementById("cadastro-form").reset();
+        const tipoUsuario = document.querySelector('input[name="tipo-usuario"]:checked').value;
+        if (tipoUsuario === "medico") {
+          window.location.href = "Tela de Login.html";
+        } else if (tipoUsuario === "paciente") {
+          window.location.href = "Tela de Login.html";
+        }
+      }
+    }
 
-  }
-}
+    // Adiciona um event listener para o submit do formulário
+    const formCadastro = document.getElementById("cadastro-form");
+    formCadastro.addEventListener("submit", validarFormulario);
 
-// Adiciona um event listener para o submit do formulário
-const formCadastro = document.getElementById("cadastro-form");
-formCadastro.addEventListener("submit", validarFormulario);
-
-const imageLink3 = document.getElementById("imageLink3");
-  imageLink3.addEventListener("click", function () {
-    window.location.href = "Tela de Inicio.html";
-  });
-</script>
+    const imageLink3 = document.getElementById("imageLink3");
+    imageLink3.addEventListener("click", function () {
+      window.location.href = "Tela de Inicio.html";
+    });
+  </script>
 </body>
+
 </html>
-       

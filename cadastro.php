@@ -1,29 +1,28 @@
 <?php
-// Conectar ao banco de dados (substitua os valores conforme necessário)
+// Conexão com o banco de dados
 $servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
-$dbname = "seu_banco_de_dados";
-
+$username = "root";
+$password = "";
+$dbname = "diegodb";
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar a conexão
 if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Obter os dados do formulário de cadastro
-$nome = $_POST["nome"];
-$cpf = $_POST["cpf"];
-$senha = $_POST["senha"];
+// Recebe os dados do formulário de cadastro
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$cidade = $_POST['cidade'];
+$cpf = $_POST['cpf'];
+$senha = $_POST['senha'];
+$tipoUsuario = $_POST['tipo-usuario'];
 
-// Inserir os dados no banco de dados
-$sql = "INSERT INTO usuarios (nome, cpf, senha) VALUES ('$nome', '$cpf', '$senha')";
-
+// Insere os dados no banco de dados
+$sql = "INSERT INTO usuarios (nome, email, cidade, cpf, senha, tipo_usuario) VALUES ('$nome', '$email', '$cidade', '$cpf', '$senha', '$tipoUsuario')";
 if ($conn->query($sql) === TRUE) {
     echo "Cadastro realizado com sucesso!";
 } else {
-    echo "Erro no cadastro: " . $conn->error;
+    echo "Erro no cadastro: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();

@@ -1,9 +1,9 @@
 <?php
 // Conectar ao banco de dados (substitua os valores conforme necessário)
 $servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
-$dbname = "seu_banco_de_dados";
+$username = "root";
+$password = "";
+$dbname = "diegodb";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
