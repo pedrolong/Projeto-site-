@@ -6,6 +6,7 @@
 
 body {
   margin: 0px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .tela {
@@ -404,3 +405,48 @@ body {
   justify-content: center;
   margin-left: 10px;
 }
+
+.botoes-cabeçalho {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  margin-top: 65px;
+  padding: 13px;
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+    float: right;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-right: 100px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 100px;
+    padding: 10px;
+    color: white;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    padding-left: 150px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }

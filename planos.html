@@ -12,9 +12,22 @@
 <body>
   <div class="tela-total">
     <div class="cabeçalho">
-      <img class="logo" src="assents/logo.png">
-      <h1 class="titulo"> Health Care </h1>
-    </div>
+      <a href="#" id="imageLink3"><img class="logo" src="assents/image_1.png"> </a>
+      <h1 class="titulo"> Health <br> Care </h1>
+      <button class="login">
+        <img class="login2" src="assents/3607444_1.png">
+        <h1 class="login3"> Login </h1>
+      </button>
+      <div class="botoes-cabeçalho">
+        <nav>
+          <ul>
+            <li><a href="planos.html">Assine nosso plano</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Atendimentos</a></li>
+            <li><a href="#">Quem Nós Somos</a></li>
+          </ul>
+        </nav>
+      </div>
     <div class="div-h1">
       <h1 class="conheça-planos"> Conheça nossos planos! Temos o melhor pra você </h1>
     </div>
@@ -39,7 +52,20 @@
           <br> <h1 class="preço1"> R$ 608 / por mês </h1>
     </div>
   </div>
+
+  <script>
+
+
+const imageLink3 = document.getElementById("imageLink3");
+  imageLink3.addEventListener("click", function () {
+    window.location.href = "Tela de Inicio.html";
+  });
+  const loginBtn = document.querySelector(".login");
+  loginBtn.addEventListener("click", function () {
+    window.location.href = "Tela de Login.html";
+  });
+
+  </script>
 </body>
 
 </html>
-uhubfwfwfghg

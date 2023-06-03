@@ -5,18 +5,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="styleD.css" rel="stylesheet" type="text/css" />
+  <link href="Style-Cadastro.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="retangulo-topo">
-    <h1 class="helth-care"> Health<br>Care </h1>
-    <img class="logo-clinica" src="assents/logo.png">
-  </div>
+  <div class="cabeçalho">
+    <a href="#" id="imageLink3"><img class="logo" src="assents/image_1.png"> </a>
+    <h1 class="titulo"> Health <br> Care </h1>
+    <button class="login">
+      <img class="login2" src="assents/3607444_1.png">
+      <h1 class="login3"> Login </h1>
+    </button>
+    <div class="botoes-cabeçalho">
+      <nav>
+        <ul>
+          <li><a href="planos.html">Assine nosso plano</a></li>
+          <li><a href="#">Contatos</a></li>
+          <li><a href="#">Atendimentos</a></li>
+          <li><a href="#">Quem Nós Somos</a></li>
+        </ul>
+      </nav>
+    </div>
   
   <div class="crie-conta"> Crie sua conta </div>
   <div class="meio">
-    <form id="cadastro-form">
+    <form action="cadastro.php" method="post" id="cadastro-form">
       <label class="nome2"> Nome:
         <input class="nome" id="nome" type="text" name="nome" required placeholder="Digite seu nome aqui">
       </label>
@@ -51,7 +64,7 @@
           placeholder="Digite novamente sua senha" id="confirme-senha">
       </label>
 
-      <button type="submit" class="criar-conta1"> Criar Conta </button>
+      <button type="submit"  value="Cadastrar" class="criar-conta1"> Criar Conta </button>
     </form>
   </div>
   <script>
@@ -133,6 +146,11 @@ emailError.remove();
 // Adiciona um event listener para o submit do formulário
 const formCadastro = document.getElementById("cadastro-form");
 formCadastro.addEventListener("submit", validarFormulario);
+
+const imageLink3 = document.getElementById("imageLink3");
+  imageLink3.addEventListener("click", function () {
+    window.location.href = "Tela de Inicio.html";
+  });
 </script>
 </body>
 </html>

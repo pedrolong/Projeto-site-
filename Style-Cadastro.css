@@ -1,91 +1,83 @@
-* {
-	margin: 0px;
-	padding: 0px;
-}
 
-.tela-total {
-	width: 100%;
-	height: 1024px;
-	background-color: rgb(255, 255, 255);
-	font-family: 'Open Sans', sans-serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
 
-.titulo {
-font-size: 39px;
-margin-top: 45px;	
-color: white;
+.helth-care {
+  font-size: 32px;
+  margin: 0;
 }
 
-.div-h1 {
-height: 100px ;
-width: 100%;
-background-color: rgb(255, 255, 255);
-display: flex;
-align-items: center;
-justify-content: center;
+
+.meio {
+  margin: 40px auto;
+  max-width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.plano-individual {
-	width: 900px;
-	height: 200px ;
-	background-color: #01AE7A;
-	margin-left: 24% ;
-	display: flex;
-	flex-direction: column;
-	padding: 15px;
-	text-align: center;	
-	margin-top: 10px;
+.crie-conta {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 500;
 }
 
-.titulo-plano1 {
-font-size: 40px;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold ;
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.preço1 {
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
+
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="password"] + label 
+input[type="cpf"] + label {
+  display: block;
+  margin-bottom: 8px;
 }
 
-.texto1 {
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+input[type="text"],
+input[type="email"],
+input[type="cpf"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.plano-casal{
-	width: 900px;
-	height: 200px ;
-	background-color: #01AE7A;
-	margin-left: 24% ;
-	display: flex;
-	flex-direction: column;
-	padding: 15px;
-	text-align: center;	
-	margin-top: 10px;
+
+.criar-conta1 {
+  background-color:#01AE7A ;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  height:50px ;
+  width:150px ;
+  font-size: 20px;
 }
 
-.titulo-plano2{
-font-size: 40px;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold ;
-}
 
-.preço2{
-	color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-}
-
-.texto2{
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+footer {
+  background-color: #01AE7A;
+  height: 100px;
 }
 
 .cabeçalho {
@@ -195,7 +187,7 @@ font-size: 25px;
   
   .login3 {
 	font-size: 30px;
-	top: -15px;
+  margin-top: 10px;
 	left: 33%;
 	font-family: 'Open Sans', sans-serif;
   }
@@ -204,7 +196,7 @@ font-size: 25px;
 	display: flex;
 	flex-direction: row;
 	margin-left: 200px;
-	margin-top: 100px;
+	margin-top: 75px;
 	padding: 13px;
 	text-decoration: none;
 	color: white;
