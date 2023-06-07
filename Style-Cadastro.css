@@ -5,7 +5,9 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  height: 100px;
 }
+
 
 
 .helth-care {
@@ -20,7 +22,7 @@ body {
   background-color: white;
   padding: 40px;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #0000001a;
 }
 
 .crie-conta {
@@ -88,8 +90,7 @@ footer {
 	position: absolute;
 	left: 0%;
 	margin: 0px;
-	border: 0px;
-  
+	z-index: 1;
   }
   
   .logo {
@@ -235,4 +236,16 @@ footer {
 	  color: white;
 	  text-decoration: none;
 	  font-family: 'Open Sans', sans-serif;
+	}
+
+	#wp {
+		padding: 0px;
+		margin: 0px;
+		position: absolute;
+		top: 150px;
+		border: 0px;
+	}
+
+	#wp-site-blocks {
+		padding: 0px;
 	}

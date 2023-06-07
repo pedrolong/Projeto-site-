@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  background: linear-gradient(180deg, rgba(1,174,122,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(180deg, #01ae7a 0%, rgba(255,255,255,1) 100%);
 }
 
 /* Centraliza a imagem */
@@ -89,4 +89,8 @@ input[type="radio"]:checked+label {
 
 .criar_conta {
   margin-bottom: 254px;
+}
+
+#wp {
+  border: 0px;
 }
