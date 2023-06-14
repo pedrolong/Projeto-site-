@@ -10,82 +10,56 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-
 .titulo {
-font-size: 39px;
-margin-top: 45px;	
-color: white;
+	font-size: 39px;
+	margin-top: 45px;
+	color: white;
 }
 
 .div-h1 {
-height: 100px ;
-width: 100%;
-background-color: rgb(255, 255, 255);
-display: flex;
-align-items: center;
-justify-content: center;
+	height: 100px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.plano-individual {
+button.plano-individual,
+button.plano-casal {
 	width: 900px;
-	height: 200px ;
+	height: 200px;
 	background-color: #01AE7A;
-	margin-left: 24% ;
+	margin: 10px auto;
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
-	text-align: center;	
-	margin-top: 10px;
+	text-align: center;
+	border: none;
 }
 
-.titulo-plano1 {
-font-size: 40px;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold ;
-}
-
-.preço1 {
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-}
-
-.texto1 {
+button.plano-individual .titulo-plano1,
+button.plano-casal .titulo-plano2 {
+	font-size: 30px;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
 }
 
-.plano-casal{
-	width: 900px;
-	height: 200px ;
-	background-color: #01AE7A;
-	margin-left: 24% ;
-	display: flex;
-	flex-direction: column;
-	padding: 15px;
-	text-align: center;	
-	margin-top: 10px;
-}
-
-.titulo-plano2{
-font-size: 40px;
-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold ;
-}
-
-.preço2{
-	color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 25px;
-}
-
-.texto2{
+button.plano-individual .preço1,
+button.plano-casal .preço2 {
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+	font-size: 20px;
+}
+
+button.plano-individual .texto1,
+button.plano-casal .texto2 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
 }
 
 .cabeçalho {
@@ -97,10 +71,9 @@ font-size: 25px;
 	left: 0%;
 	margin: 0px;
 	border: 0px;
-  
-  }
-  
-  .logo {
+}
+
+.logo {
 	width: 120px;
 	height: 120px;
 	border-radius: 5%;
@@ -109,9 +82,9 @@ font-size: 25px;
 	top: 10%;
 	align-items: center;
 	justify-items: center;
-  }
-  
-  .titulo {
+}
+
+.titulo {
 	font-size: 40px;
 	position: absolute;
 	left: 150px;
@@ -119,61 +92,24 @@ font-size: 25px;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 	cursor: default;
-  }
-  
-  .assine-plano {
+}
+
+.assine-plano,
+.quem-somos,
+.atendimentos,
+.contato {
 	width: 250px;
 	height: 40px;
 	position: absolute;
 	top: 110px;
-	left: 20%;
 	background-color: #01AE7A;
 	border: 1px;
 	font-size: 25px;
 	cursor: pointer;
 	color: white;
-  }
-  
-  .quem-somos {
-	width: 250px;
-	height: 40px;
-	position: absolute;
-	top: 110px;
-	left: 40%;
-	background-color: #01AE7A;
-	border: 1px;
-	font-size: 25px;
-	cursor: pointer;
-	color: white;
-  }
-  
-  .atendimentos {
-	width: 250px;
-	height: 40px;
-	position: absolute;
-	top: 110px;
-	left: 60%;
-	background-color: #01AE7A;
-	border: 1px;
-	font-size: 25px;
-	cursor: pointer;
-	color: white;
-  }
-  
-  .contato {
-	width: 250px;
-	height: 40px;
-	position: absolute;
-	top: 110px;
-	left: 80%;
-	background-color: #01AE7A;
-	border: 1px;
-	font-size: 25px;
-	cursor: pointer;
-	color: white;
-  }
-  
-  .login {
+}
+
+.login {
 	position: absolute;
 	left: 80%;
 	background-color: white;
@@ -183,24 +119,24 @@ font-size: 25px;
 	border-radius: 100px;
 	border: 0px;
 	cursor: pointer;
-  }
-  
-  .login2 {
+}
+
+.login2 {
 	height: 100%;
 	width: 50px;
 	left: 0%;
 	top: 0%;
 	position: absolute;
-  }
-  
-  .login3 {
+}
+
+.login3 {
 	font-size: 30px;
 	top: -15px;
 	left: 33%;
 	font-family: 'Open Sans', sans-serif;
-  }
+}
 
-  .botoes-cabeçalho {
+.botoes-cabeçalho {
 	display: flex;
 	flex-direction: row;
 	margin-left: 200px;
@@ -208,39 +144,63 @@ font-size: 25px;
 	padding: 13px;
 	text-decoration: none;
 	color: white;
-  }
-  
-  nav {
-	  float: right;
-	  margin-top: 0px;
-	  font-size: 25px;
-	  margin-right: 100px;
-	  color: white;
-  }
-  
-  ul {
-	  list-style-type: none;
-	  margin-right: 100px;
-	  padding: 10px;
-	  color: white;
-  }
-  
-  li {
-	  text-decoration: none;
-	  color: white;
-	  padding-left: 150px;
-  }
-  
-  ul {
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  align-items: center;
-	  color: white;
-	}
-  
-	a {
-	  color: white;
-	  text-decoration: none;
-	  font-family: 'Open Sans', sans-serif;
-	}
+}
+
+nav {
+	float: right;
+	margin-top: 0px;
+	font-size: 25px;
+	margin-right: 100px;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin-right: 100px;
+	padding: 10px;
+	color: white;
+}
+
+li {
+	text-decoration: none;
+	color: white;
+	padding-left: 150px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+button.plano-individual,
+button.plano-casal {
+  width: 900px;
+  height: 200px;
+  background-color: #01AE7A;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adicionado para centralizar o conteúdo verticalmente */
+  justify-content: center; /* Adicionado para centralizar o conteúdo horizontalmente */
+  padding: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+}
+
+.plano-individual:hover,
+.plano-casal:hover,
+.plano-familia:hover {
+  background-color: #028d64;
+  cursor: pointer;
+}
+
